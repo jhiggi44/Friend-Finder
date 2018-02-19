@@ -12,8 +12,6 @@ var app = express();
 // Sets initial port.
 var PORT = process.env.PORT || 8080;
 
-app.use(express.static(__dirname));
-
 // BodyParser makes it possible for our server to interpret data sent to it.
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
